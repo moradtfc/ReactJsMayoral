@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  padding: 40px;
+}
+
+.App tr{
+  text-align: center;
+  line-height: 2;
+}
+
+.App tr td{
+  border: 1px solid;
 }
 
 .App-logo {

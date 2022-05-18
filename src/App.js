@@ -1,25 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Employees from "./employees.json"
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Fechas</p>
+      <tr>
+        <td>EMPLEADOS</td>
+      </tr>
+      {Employees.data.map((item, i) => (
+        <tr key={i}>
+        <td>{item.first_name + ' ' + item.last_name}</td>
+        </tr>
+))}
     </div>
   );
 }
+
 
 export default App;
